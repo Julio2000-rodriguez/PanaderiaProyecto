@@ -10,27 +10,23 @@ using System.Windows.Forms;
 
 namespace Panaderia
 {
-    public partial class Form1 : Form
+    public partial class Inicio : Form
     {
-        public Form1()
+        public Inicio()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void BtnVolver_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnEntrar_Click(object sender, EventArgs e)
-        {
-            Inicio Cambio = new Inicio();
+            Form1 Cambio = new Form1();
             Cambio.Show();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void BtnCliente_Click(object sender, EventArgs e)
         {
-            Close();
+            FormularioClientes Cambio = new FormularioClientes();
+            Cambio.ShowDialog();
         }
     }
 }
